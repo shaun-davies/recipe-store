@@ -22,3 +22,20 @@ def add_cuisine():
         db.session.commit()
         return redirect(url_for("cuisines"))
     return render_template("add_cuisine.html")
+
+
+@app.route("/add_recipe", methods=["GET", "POST"])
+def add_recipe():
+    cuisines = list(Cuisine.query.order_by(Cuisine.cuisine_name).all())
+    if request.method == "POST":
+        recipe = Recipe(
+            recipe_name=request.form.get("recipe_name"),
+            cuisine_id=request.form.get("cuisine_id"),
+            recipe_time=request.form.get("recipe_time"),
+            recipe_ingredients=request.form.get("recipe_ingredients"),
+            recipe_preparation=request.form.get("recipe_preparation")
+        )
+        db.session.add(recipe)
+        db.session.commit()
+        return redirect(url_for("home"))
+    return render_template("add_recipe.html", cuisines=cuisines)

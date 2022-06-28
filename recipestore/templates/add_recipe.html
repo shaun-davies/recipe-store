@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section>
+    <div class="container">
+        <!-- New Recipe Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">New Recipe</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fa-solid fa-bowl-food"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Add Recipe Form-->
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-xl-7">
+                <form id="contactForm" method="POST" action="{{url_for('add_recipe')}}">
+                    <!-- Name input-->
+                    <div class="mb-3">
+                        <input class="form-control validate" id="recipe_name" name="recipe_name" minlength="3" maxlength="30" type="text"
+                            placeholder="Enter name of recipe..." required />
+                        <label for="recipe_name">Recipe Name</label>
+                    </div>
+                    <!-- Cuisine input-->
+                    <div class="mb-3">
+                        <select id="cuisine_id" class="form-select" name="cuisine_id" aria-label="Default select example" required>
+                            <option selected>Choose Cuisine</option>
+                            {% for cuisine in cuisines %}
+                                <option value="{{ cuisine.id }}">{{ cuisine.cuisine_name }}</option>
+                            {% endfor %}
+                          </select>
+                    </div>
+                    <!-- Time input-->
+                    <div class="mb-3">
+                        <input class="form-control validate" id="recipe_time" name="recipe_time" minlength="1" maxlength="5" type="number"
+                            placeholder="Enter time needed..." required />
+                        <label for="recipe_time">Time</label>
+                    </div>
+                    <!-- Ingredients input-->
+                    <div class="mb-3">
+                        <textarea class="form-control validate" id="recipe_ingredients" name="recipe_ingredients" minlength="10" maxlength="200" type="text"
+                        placeholder="Enter ingredients..." required></textarea>
+                        <label for="recipe_ingredients">Ingredients</label>
+                    </div>
+                    <!-- Preparation input-->
+                    <div class="mb-3">
+                        <textarea class="form-control validate" id="recipe_preparation" name="recipe_preparation" minlength="10" maxlength="200" type="text"
+                        placeholder="Enter preparation..." required></textarea>
+                        <label for="recipe_preparation">Preparation</label>
+                    </div>
+                    <div>
+                         <!-- Submit Button-->
+                    <button class="btn btn-primary" type="submit">Add</button>
+                    </div>
+                   
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}

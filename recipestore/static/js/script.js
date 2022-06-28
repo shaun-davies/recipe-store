@@ -51,4 +51,8 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
 
+    // Select initialization
+    let selects = document.querySelectorAll("select");
+    M.FormSelect.init(selects);
+
 });
