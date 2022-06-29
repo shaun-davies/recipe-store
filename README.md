@@ -1,108 +1,186 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# [Recipe Store](https://github.com/shaun-davies/recipe-store)
 
-Welcome shaun-davies,
+Recipe Store is a simple website with a database which allows users to find new recipes, create and store new recipes and display them and have the ability to edit and delete recipes.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## UX
+ 
+The aim of the website is to:
 
-## Gitpod Reminders
+1. Be a visually appealing.
+2. Be user friendly.
+3. Provide a place to discover new recipes.
+4. Provide a storage system for users to keep their recipes and display them.
+5. Provide functionality to edit and delete recipes.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### User stories
 
-`python3 -m http.server`
+As a user, I want:
 
-A blue button should appear to click: _Make Public_,
+1. A simple easy to understand the interface.
+2. Simple buttons and mechanisms.
+3. A place to discover new recipes.
+4. A place to safely store and view recipes as well as edit and delete functionality.
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+### Design Choices
 
-Another blue button should appear to click: _Open Browser_.
+The aesthetic of the website is simple yet visually appealing:
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-To log into the Heroku toolbelt CLI:
+**Colours**
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- Tones of blue and white for simplicity and profesionalism and green and yellow accents in header image to provide interest.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+**Images**
 
-------
+- One colourful image used throughout for interest and uniformity.
 
-## Release History
+**Forms**
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- Basic, easy to use and read for a simplistic look.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+**Buttons**
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- Uniformed and brightly coloured buttons to stand out against the white background.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+**Cards**
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- Cards displaying Recipe names and Cuisine names for a simple and modern look. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+**Theme**
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- Basic theme 'Freelancer' installed and modified from [Start Bootstrap](https://startbootstrap.com/)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Wireframes
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+These wireframes were created using [Balsamiq](https://balsamiq.com/) during the Scope Plane part of the design and planning process for this project.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- [Homepage Wireframe](../blob/master/recipestore/static/images/readme-images/wireframes/homepage.png)
+- [View Recipe Wireframe](../blob/master/recipestore/static/images/readme-images/wireframes/view-recipe-page.png)
+- [Edit Recipe Wireframe](../blob/master/recipestore/static/images/readme-images/wireframes/edit-recipe-page.png)
+- [New Recipe Wireframe](../blob/master/recipestore/static/images/readme-images/wireframes/new-recipe-page.png)
+- [Cuisines Wireframe](../blob/master/recipestore/static/images/readme-images/wireframes/cuisines-page.png)
+- [New Cuisine Wireframe](../blob/master/recipestore/static/images/readme-images/wireframes/new-cuisine-page.png)
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Features 
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Existing Features
+1. **Create**
+- New Recipe and Add Cuisine functions add new data to the database.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+2. **Read**
+- Display of Recipes and Cuisine names on home and other pages.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+3. **Update**
+- Edit Recipe function 
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+4. ** Delete **
+- Delete Recipe function
 
-------
+### Features Left to Implement
 
-## FAQ about the uptime script
+1. User Registration and Log-in
+- Personal accounts for users to edit and/or delete their own recipes. 
 
-**Why have you added this script?**
+2. Search 
+- Search functionality for users to search for recipes under any criteria.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+3. Modals
+- Damage control modals to confirm deletion of recipes.
 
-**How will this affect me?**
+4. Images
+- Input field for users to add image to their recipe.
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+## Technologies Used 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- This project uses HTML, CSS, Javascript and Python programming languages.
+- [Flask](https://flask.palletsprojects.com/)
+    - Developer used Flask as a framework.
+- [SQLAlchemy](https://sqlalchemy.org/)
+    - The project uses SQLAlchemy as a database management system.
+- [Bootstrap](https://bootstrapcdn.com/)
+    - The project uses Bootstrap to simplify the structure of the website and make the website responsive.
+- [Font Awesome](https://www.fontawesome.com/)
+    - Icons for this project have been sourced from flaticon.com
+- [GitHub](https://github.com)
+    - This project uses Github to store and share all project code remotely.
+- [Heroku](https://heroku.com)
+    - This project was deployed via Heroku.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+## Testing
 
-**So….?**
+Testing information can be found in seperate [testing.md](testing.md) file.
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+## Deployment
 
-**Can I opt out?**
+The code for this website was written in [Gitpod](https://gitpod.io/), pushed to [Github](https://github.com/) and was deployed via [Heroku](https://heroku.com/).
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+The database used was [SQLAlchemy](https://sqlalchemy.org/)
 
+The following was used to deploy the website:
+
+1. Create a "requirements.txt" file using the command "pip3 freeze --local > requirements.txt"
+2. Create a "Procfile" using the command "echo web: python routes.py > Procfile"
+3. Push these changes to the repository using "git add -A","git commit -m 'commit message here' then "git push"
+4. Ensure a .gitignore file is in the repository
+5. Add "env.py" and "pycache/" to .gitignore file to ensure no sensitive information is added to repository
+6. Login or sign up to Heroku
+7. Click "New" on the top right of the dashboard and select "Create new app"
+8. Include an "App name", choose a region and click "Create app"
+9. Click the "Deploy" tab and under "Deployment method" select "GitHub"
+10. Search to find your GitHub repository and click "Connect". Please note: do not enable automatic deployment yet as this will cause errors
+11. Click the "Settings" tab and click "Reveal Config Vars" from Config Vars
+12. Enter the key value pairs that match those in your env.py file:
+
+| Key           | Value                      |
+| ------------- |:--------------------------:|
+| IP            | 0.0.0.0                    |
+| PORT          | 5000                       |
+| SECRET_KEY    | "secret_key"               |
+| DB_URL        | "postgresql:///recipestore"|
+
+13. Go back to the "Deploy" tab and click "Enable Automatic Deployment"
+14. Still in the "Deploy" tab under "Manual deploy", select "main"
+15. Click "Deploy Branch"
+16. Once the app has finished building click "Open App" to open your site.
+
+
+### How to run this project locally
+
+To clone this project from GitHub:
+
+1. Follow this link to the [Memory Farm GitHub repository](https://github.com/shaun-davies/memory-farm-game).
+2. Under the repository name, click "Clone or download".
+3. In the Clone with HTTPs section, copy the clone URL for the repository.
+4. In your local IDE open Git Bash.
+5. Change the current working directory to the location where you want the cloned directory to be made.
+6. Type ```git clone```, and then paste the url you copied in Step 3.
+```console
+git clone https://github.com/USERNAME/REPOSITORY
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+7. Press Enter. Your clone will be created.
 
-**Anything more?**
+Further reading and troubleshooting on cloning a repository from GitHub [here](https://help.github.com/en/articles/cloning-a-repository).
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+## Credits
 
----
+- All text in this project was written by the developer.
 
-Happy coding!
+### Media 
+
+#### Images
+- The Header Image was created by Adonyi Gabor and sourced from [Pexels](https://pexels.com).
+
+### Acknowledgements
+
+Special thanks to:
+- Kieron from Code Institute Student Care for his help and support which has allowed me to continue learning and to submit my second Milestone Project for Code Institute.
+
+- My mentor Akshat Garg for his guidance and coding knowledge.
+
+- Anna Greaves for her teachings and for allowing me to learn how to structure and format a good readme from her example.
+
+#### Disclaimer
+The content of this website, including the images used, are for educational purposes only.
