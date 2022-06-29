@@ -1,4 +1,4 @@
-# [Recipe Store](https://github.com/shaun-davies/recipe-store)
+# [Recipe Store](https://dashboard.heroku.com/apps/ms3-recipe-store)
 
 Recipe Store is a simple website with a database which allows users to find new recipes, create and store new recipes and display them and have the ability to edit and delete recipes.
 

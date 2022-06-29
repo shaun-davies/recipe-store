@@ -2,7 +2,7 @@
 
 [Main README.md file](README.md)
 
-[View website in GitHub Pages](https://shaun-davies.github.io/recipe-store/)
+[View website in GitHub Pages](https://dashboard.heroku.com/apps/ms3-recipe-store)
 
 ## Automated Testing
 
