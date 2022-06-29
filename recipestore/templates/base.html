@@ -47,6 +47,28 @@
 
     <main class="container">
         {% block content %}
+        <div class="container">
+            <!-- Recipes Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Recipes</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-earth-americas"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+        </div>
+        <div class="container-fluid d-flex">
+            <div class="row align-items-center justify-content-center">
+                {% for recipe in recipes %}
+                <div class="card col-md-6 col-lg-4 mb-5 align-items-center" style="width: 18rem;">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">{{ recipe.recipe_name }}</h5>
+                      <a href="{{ url_for('view_recipe', recipe_id=recipe.id) }}" class="btn btn-primary d-flex justify-content-center">View Recipe</a>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
         {% endblock %}
     </main>
     <!-- Footer-->

@@ -3,5 +3,4 @@ Flask==2.1.2
 itsdangerous==2.1.2
 Werkzeug==2.1.2
 flask_sqlalchemy==2.5.1
-psycopg==3.0.15
 psycopg2==2.9.3

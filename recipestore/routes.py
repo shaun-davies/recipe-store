@@ -5,7 +5,8 @@ from recipestore.models import Cuisine, Recipe
 
 @app.route("/")
 def home():
-    return render_template("base.html")
+    recipes = list(Recipe.query.order_by(Recipe.id).all())
+    return render_template("base.html", recipes=recipes)
 
 
 @app.route("/cuisines")
@@ -39,3 +40,9 @@ def add_recipe():
         db.session.commit()
         return redirect(url_for("home"))
     return render_template("add_recipe.html", cuisines=cuisines)
+
+
+@app.route("/view_recipe/<int:recipe_id>", methods=["GET"])
+def view_recipe(recipe_id):
+    recipe = Recipe.query.get_or_404(recipe_id)
+    return render_template("view_recipe.html", recipe=recipe)

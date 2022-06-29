@@ -8,7 +8,7 @@
         <!-- Icon Divider-->
         <div class="divider-custom">
             <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><i class="fa-solid fa-bowl-food"></i></div>
+            <div class="divider-custom-icon"><i class="fa-solid fa-plus"></i></div>
             <div class="divider-custom-line"></div>
         </div>
         <!-- Add Recipe Form-->
@@ -34,21 +34,21 @@
                     <div class="mb-3">
                         <input class="form-control validate" id="recipe_time" name="recipe_time" minlength="1" maxlength="5" type="number"
                             placeholder="Enter time needed..." required />
-                        <label for="recipe_time">Time</label>
+                        <label for="recipe_time">Time (minutes)</label>
                     </div>
                     <!-- Ingredients input-->
                     <div class="mb-3">
-                        <textarea class="form-control validate" id="recipe_ingredients" name="recipe_ingredients" minlength="10" maxlength="200" type="text"
+                        <textarea class="form-control validate" id="recipe_ingredients" name="recipe_ingredients" minlength="10" maxlength="1000" type="text"
                         placeholder="Enter ingredients..." required></textarea>
                         <label for="recipe_ingredients">Ingredients</label>
                     </div>
                     <!-- Preparation input-->
                     <div class="mb-3">
-                        <textarea class="form-control validate" id="recipe_preparation" name="recipe_preparation" minlength="10" maxlength="200" type="text"
+                        <textarea class="form-control validate" id="recipe_preparation" name="recipe_preparation" minlength="10" maxlength="5000" type="text"
                         placeholder="Enter preparation..." required></textarea>
                         <label for="recipe_preparation">Preparation</label>
                     </div>
-                    <div>
+                    <div class="mb-3 d-flex justify-content-center">
                          <!-- Submit Button-->
                     <button class="btn btn-primary" type="submit">Add</button>
                     </div>
