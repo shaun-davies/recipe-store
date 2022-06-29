@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% block content %}
+
+
+<div class="container">
+    <div class="row">
+        <!-- Cuisine Name Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">{{ cuisine.name_name }} Recipes
+        </h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fa-solid fa-kitchen-set"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <div class="container">
+            {% for recipe in recipes %}
+            <ul class="list-group">
+                <li class="list-group-item"><strong>Total Time: </strong>{{ recipe.recipe_time }} minutes</li>
+                <li class="list-group-item"><strong>Ingredients: </strong>{{ recipe.recipe_ingredients }}</li>
+                <li class="list-group-item"><strong>Preparation: </strong>{{ recipe.recipe_preparation }}</li>
+            </ul>
+            {% endfor %}
+        </div>
+    </div>
+
+
+{% endblock %}
