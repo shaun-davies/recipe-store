@@ -23,7 +23,7 @@
                     </div>
                     <!-- Cuisine input-->
                     <div class="mb-3">
-                        <select id="cuisine_id" class="form-select" name="cuisine_id" aria-label="Default select example" required>
+                        <select id="cuisine_id" class="form-select" name="cuisine_id" aria-label="Default select example" multiple size="4" required>
                             <option disabled>Choose Cuisine</option>
                             {% for cuisine in cuisines %}
                                 {% if cuisine == recipe.cuisine %}
@@ -36,13 +36,13 @@
                     </div>
                     <!-- Time input-->
                     <div class="mb-3">
-                        <input class="form-control validate" id="recipe_time" name="recipe_time" value="{{ recipe.recipe_time }}" minlength="1" maxlength="5" type="number"
+                        <input class="form-control validate" id="recipe_time" name="recipe_time" value="{{ recipe.recipe_time }}" type="number"
                             placeholder="Enter time needed..." required />
                         <label for="recipe_time">Time (minutes)</label>
                     </div>
                     <!-- Ingredients input-->
                     <div class="mb-3">
-                        <textarea class="form-control validate" id="recipe_ingredients" name="recipe_ingredients" minlength="10" maxlength="1000" type="text"
+                        <textarea class="form-control validate" id="recipe_ingredients" name="recipe_ingredients" minlength="10" maxlength="1000"
                         placeholder="Enter ingredients..." required>
                         {{- recipe.recipe_ingredients -}}
                         </textarea>
@@ -50,7 +50,7 @@
                     </div>
                     <!-- Preparation input-->
                     <div class="mb-3">
-                        <textarea class="form-control validate" id="recipe_preparation" name="recipe_preparation" minlength="10" maxlength="5000" type="text"
+                        <textarea class="form-control validate" id="recipe_preparation" name="recipe_preparation" minlength="10" maxlength="5000"
                         placeholder="Enter preparation..." required>
                         {{- recipe.recipe_preparation -}}
                         </textarea>
