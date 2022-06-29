@@ -4038,6 +4038,32 @@ textarea.form-control-lg {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
+.navbar > .nav-bar {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+
+#mainNav,
+nav .navbar {
+  padding: 0 !important;
+}
+
+nav .navbar-brand,
+nav .navbar-toggler {
+  margin: 0 20px;
+}
+
+.navbar > .nav-bar {
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+}
+
 .navbar > .container,
 .navbar > .container-fluid,
 .navbar > .container-sm,
@@ -4051,8 +4077,6 @@ textarea.form-control-lg {
   justify-content: space-between;
 }
 .navbar-brand {
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
   margin-right: 1rem;
   font-size: 1.25rem;
   text-decoration: none;
@@ -11513,4 +11537,26 @@ html {
 
  h2 {
   padding: 4rem 0 0 0;
+}
+
+.header-image {
+  background-image: url(../images/header.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+}
+
+.navbar-collapse {
+  padding: 0px 20px;
+  position: relative;
+  top: -1px;
+  background-color: rgba(var(--bs-secondary-rgb), var(--bs-bg-opacity)) !important;
+  width: 100vw !important;
+}
+
+@media screen and (min-width: 992px) {
+	.navbar-collapse {
+		background-color: transparent !important;
+	}	
 }
