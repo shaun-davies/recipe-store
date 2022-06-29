@@ -38,16 +38,16 @@ Below is an account of manual testing done.
 All steps on desktop were repeated in browsers: Firefox, Chrome and Internet Explorer and on varying different desktop screen sizes and Iphone and Ipad and in Chrome Developers Tools device simulators on all options and orientations.
 
 1. Main page
-    1. Navbar
-        - All links on navbar working
-    2. View Recipe
-        - View Recipe button on recipes working and directs to correct recipe
-        -Edit and Delete buttons on View Page working correctly
-2. Cuisines page
+1. Navbar
+    1. All links on navbar working
+2. View Recipe
+    1. View Recipe button on recipes working and directs to correct recipe
+    2. Edit and Delete buttons on View Page working correctly
+3. Cuisines page
     1. Page clearly shows all cuisines stored on the database
-3. Add Cuisines page
+4. Add Cuisines page
     1. Form to add a cuisine works correctly and redirects back to Cuisines page
-4. New Recipe page
+5. New Recipe page
     1. Form inputs all working correctly to add new recipe to the database
 
 
