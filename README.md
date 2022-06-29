@@ -57,12 +57,12 @@ The aesthetic of the website is simple yet visually appealing:
 
 These wireframes were created using [Balsamiq](https://balsamiq.com/) during the Scope Plane part of the design and planning process for this project.
 
-- [Homepage Wireframe](../blob/master/recipestore/static/images/readme-images/wireframes/homepage.png)
-- [View Recipe Wireframe](../blob/master/recipestore/static/images/readme-images/wireframes/view-recipe-page.png)
-- [Edit Recipe Wireframe](../blob/master/recipestore/static/images/readme-images/wireframes/edit-recipe-page.png)
-- [New Recipe Wireframe](../blob/master/recipestore/static/images/readme-images/wireframes/new-recipe-page.png)
-- [Cuisines Wireframe](../blob/master/recipestore/static/images/readme-images/wireframes/cuisines-page.png)
-- [New Cuisine Wireframe](../blob/master/recipestore/static/images/readme-images/wireframes/new-cuisine-page.png)
+- [Homepage Wireframe](static/images/readme-images/wireframes/homepage.png)
+- [View Recipe Wireframe](static/images/readme-images/wireframes/view-recipe-page.png)
+- [Edit Recipe Wireframe](static/images/readme-images/wireframes/edit-recipe-page.png)
+- [New Recipe Wireframe](static/images/readme-images/wireframes/new-recipe-page.png)
+- [Cuisines Wireframe](static/images/readme-images/wireframes/cuisines-page.png)
+- [New Cuisine Wireframe](static/images/readme-images/wireframes/new-cuisine-page.png)
 
 ## Features 
 
