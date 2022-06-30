@@ -21,23 +21,23 @@ The following section goes through each of the user strories from the UX section
 The aim of the website is to:
 
 1. Be a visually appealing.
-    -Use of colourful header image, icons and simple design
+    - Use of colourful header image, icons and simple design
 2. Be user friendly.
-    -Easy to navigate with collapsable navbar which shows links to different pages, bright and bold buttons.
+    - Easy to navigate with collapsable navbar which shows links to different pages, bright and bold buttons.
 3. Provide a place to discover new recipes.
-    -Home page displays all recipes created by users with button to view the recipe.
+    - Home page displays all recipes created by users with button to view the recipe.
 4. Provide a storage system for users to keep their recipes and display them.
-    -Users can go to the Add Cuisine and Add recipe pages to create and store their data.
+    - Users can go to the Add Cuisine and Add recipe pages to create and store their data.
 5. Provide functionality to edit and delete recipes.
-    -"Buttons" on the View Recipe page allow user to edit or delete recipes.
+    - "Buttons" on the View Recipe page allow user to edit or delete recipes.
 
 ## Manual testing
 Below is an account of manual testing done.
 
-### Testing undertaken on desktop
+### Testing undertaken
 All steps on desktop were repeated in browsers: Firefox, Chrome and Internet Explorer and on varying different desktop screen sizes and Iphone and Ipad and in Chrome Developers Tools device simulators on all options and orientations.
 
-1. Main page
+#### Main page
 1. Navbar
     1. All links on navbar working
 2. View Recipe
