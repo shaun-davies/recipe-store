@@ -57,12 +57,12 @@ The aesthetic of the website is simple yet visually appealing:
 
 These wireframes were created using [Balsamiq](https://balsamiq.com/) during the Scope Plane part of the design and planning process for this project.
 
-- [Homepage Wireframe](static/images/readme-images/home-page.png)
-- [View Recipe Wireframe](static/images/readme-images/view-recipe-page.png)
-- [Edit Recipe Wireframe](static/images/readme-images/edit-recipe-page.png)
-- [New Recipe Wireframe](static/images/readme-images/new-recipe-page.png)
-- [Cuisines Wireframe](static/images/readme-images/cuisines-page.png)
-- [New Cuisine Wireframe](static/images/readme-images/new-cuisine-page.png)
+- [Homepage Wireframe](recipestore/static/images/readme-images/home-page.png)
+- [View Recipe Wireframe](recipestore/static/images/readme-images/view-recipe-page.png)
+- [Edit Recipe Wireframe](recipestore/static/images/readme-images/edit-recipe-page.png)
+- [New Recipe Wireframe](recipestore/static/images/readme-images/new-recipe-page.png)
+- [Cuisines Wireframe](recipestore/static/images/readme-images/cuisines-page.png)
+- [New Cuisine Wireframe](recipestore/static/images/readme-images/new-cuisine-page.png)
 
 ## Features 
 
