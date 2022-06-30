@@ -57,12 +57,12 @@ The aesthetic of the website is simple yet visually appealing:
 
 These wireframes were created using [Balsamiq](https://balsamiq.com/) during the Scope Plane part of the design and planning process for this project.
 
-- [Homepage Wireframe](static/images/readme-images/wireframes/homepage.png)
-- [View Recipe Wireframe](static/images/readme-images/wireframes/view-recipe-page.png)
-- [Edit Recipe Wireframe](static/images/readme-images/wireframes/edit-recipe-page.png)
-- [New Recipe Wireframe](static/images/readme-images/wireframes/new-recipe-page.png)
-- [Cuisines Wireframe](static/images/readme-images/wireframes/cuisines-page.png)
-- [New Cuisine Wireframe](static/images/readme-images/wireframes/new-cuisine-page.png)
+- [Homepage Wireframe](static/images/readme-images/home-page.png)
+- [View Recipe Wireframe](static/images/readme-images/view-recipe-page.png)
+- [Edit Recipe Wireframe](static/images/readme-images/edit-recipe-page.png)
+- [New Recipe Wireframe](static/images/readme-images/new-recipe-page.png)
+- [Cuisines Wireframe](static/images/readme-images/cuisines-page.png)
+- [New Cuisine Wireframe](static/images/readme-images/new-cuisine-page.png)
 
 ## Features 
 
@@ -76,7 +76,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 3. **Update**
 - Edit Recipe function 
 
-4. ** Delete **
+4. **Delete**
 - Delete Recipe function
 
 ### Features Left to Implement
@@ -103,7 +103,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 - [Bootstrap](https://bootstrapcdn.com/)
     - The project uses Bootstrap to simplify the structure of the website and make the website responsive.
 - [Font Awesome](https://www.fontawesome.com/)
-    - Icons for this project have been sourced from flaticon.com
+    - Icons for this project have been sourced from fontawesome.com
 - [GitHub](https://github.com)
     - This project uses Github to store and share all project code remotely.
 - [Heroku](https://heroku.com)
@@ -111,7 +111,7 @@ These wireframes were created using [Balsamiq](https://balsamiq.com/) during the
 
 ## Testing
 
-Testing information can be found in seperate [testing.md](testing.md) file.
+Testing information can be found in seperate [TESTING.md](TESTING.md) file.
 
 ## Deployment
 
@@ -166,12 +166,28 @@ Further reading and troubleshooting on cloning a repository from GitHub [here](h
 
 ## Credits
 
-- All text in this project was written by the developer.
+### Code
+- Javascript functions taken from [Start Bootstrap](https://startbootstrap.com/theme/freelancer) to initialize the navbar functions
+
+- Some HTML and CSS code was used from [Start Bootstrap](https://startbootstrap.com/theme/freelancer)
+
+- I followed the Database Management Systems Walkthrough project from Code Institute for the CRUD functionality that was used in this project
+
 
 ### Media 
 
 #### Images
 - The Header Image was created by Adonyi Gabor and sourced from [Pexels](https://pexels.com).
+
+### Example Recipes
+- Pizza Margherita
+[BBC Good Food](https://www.bbcgoodfood.com/recipes/pizza-margherita-4-easy-steps)
+
+- Lasagne
+[Tesco Real Food](https://realfood.tesco.com/recipes/simple-lasagne.html)
+
+- Katsu Curry
+[BBC Good Food](https://www.bbcgoodfood.com/recipes/you-it-katsu-curry)
 
 ### Acknowledgements
 
