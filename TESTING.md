@@ -37,7 +37,7 @@ Below is an account of manual testing done.
 ### Testing undertaken
 All steps on desktop were repeated in browsers: Firefox, Chrome and Internet Explorer and on varying different desktop screen sizes and Iphone and Ipad and in Chrome Developers Tools device simulators on all options and orientations.
 
-#### Main page
+#### Pages
 1. Navbar
     1. All links on navbar working
 2. View Recipe
